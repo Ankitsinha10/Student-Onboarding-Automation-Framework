@@ -1,0 +1,14 @@
+# Ignore the file containing our secret credentials
+.env
+
+# Ignore the folder containing installed packages
+node_modules
+
+#Ignore OS files/ Editor not useful files
+.DS_Store
+.vscode/
+
+# Test results and reports
+test-results/
+playwright-report/
+playwright/.auth/
