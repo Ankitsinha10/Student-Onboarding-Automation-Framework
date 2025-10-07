@@ -3,6 +3,11 @@ import * as dotenv from 'dotenv';
 
 dotenv.config();
 
+
+//Override the storage state for this test only - start with no session (logged out)
+
+test.use({ storageState: {cookies: [], origins:[]}});
+
 test('can access MyMusicStaff homepage', async ({ page }) => {
   // Go to the main page
   await page.goto(process.env.MMS_SCHOOL_URL!);

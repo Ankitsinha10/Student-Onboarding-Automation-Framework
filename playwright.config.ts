@@ -1,11 +1,12 @@
 import { defineConfig, devices } from '@playwright/test';
 import * as dotenv from 'dotenv';
+import * as path from 'path';
 
 dotenv.config();
 
 export default defineConfig({
   testDir: './tests',
-  timeout: 30000,
+  timeout: 60000,
   use: {
     baseURL: process.env.MMS_SCHOOL_URL,
     headless: false,
@@ -14,13 +15,16 @@ export default defineConfig({
   },
   projects: [
     {
-      name: 'setup',
+      name: 'auth-setup', // manual login project
       testMatch: /.*\.setup\.ts/,
     },
     {
-      name: 'chromium',
-      use: { browserName: 'chromium' },
-      dependencies: ['setup'],
+      name: 'tests', // normal test project
+      use: {
+        browserName: 'chromium',
+        storageState: path.join(__dirname, './playwright/.auth/user.json'), // reuse saved session
+      },
+       dependencies: ['auth-setup'] // Add this line - ensures auth completes first
     },
   ],
 });
