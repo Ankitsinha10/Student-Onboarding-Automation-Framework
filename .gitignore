@@ -8,7 +8,9 @@ node_modules
 .DS_Store
 .vscode/
 
-# Test results and reports
+# Test results, reports and generated files
+debug-*.png
+*.png
 test-results/
 playwright-report/
 playwright/.auth/
