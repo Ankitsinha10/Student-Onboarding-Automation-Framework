@@ -6,22 +6,22 @@ test ('can navigate to Add Student page', async ({page}) => {
 
     page.setDefaultTimeout(60000);
 
-//Start from the dashboard (we're already logged in via saved session)
-await page.goto('/Teacher/v2/en/home');
+    //Start from the dashboard (we're already logged in via saved session)
+    await page.goto('/Teacher/v2/en/home');
 
 
-//Wait a bit for the page tto stabilize
-await page.waitForTimeout(3000);
+    //Wait a bit for the page tto stabilize
+    await page.waitForTimeout(3000);
 
-//Take a screenshot to see what's actually showing
+    //Take a screenshot to see what's actually showing
 
-await page.screenshot({path: 'debug-home-page.png'});
+    await page.screenshot({path: 'debug-home-page.png'});
 
 
-//Check if we are acrtually logged in or redirected to login
+    //Check if we are acrtually logged in or redirected to login
 
-const currentUrl = page.url();
-console.log('Current URL:', currentUrl)
+    const currentUrl = page.url();
+    console.log('Current URL:', currentUrl)
 
 //If we see login page, the session expired 
 
