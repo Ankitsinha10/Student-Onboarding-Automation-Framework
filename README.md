@@ -178,7 +178,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Ankit Kumar Sinha**
 
-- GitHub: [@Ankitsinha10](https://github.com/Ankitsinha10)
+- 🔗 [LinkedIn](https://linkedin.com/in/ankitsinha07)
+- 🐙 [GitHub](https://github.com/Ankitsinha10)
+- 🌐 [Portfolio](https://www.ankitkumarsinha.com)
 
 ## 🙏 Acknowledgments
 
