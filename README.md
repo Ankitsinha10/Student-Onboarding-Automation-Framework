@@ -8,7 +8,6 @@ A robust test automation framework built with Playwright and TypeScript, featuri
 - **Global Authentication**: Session-based authentication strategy to avoid repetitive login steps
 - **TypeScript**: Full type safety and enhanced IDE support
 - **Playwright**: Modern, reliable browser automation
-- **End-to-End Testing**: Comprehensive test coverage for student onboarding workflows
 - **Form Validation**: Automated testing of all form validation scenarios
 
 ## 📋 Prerequisites
