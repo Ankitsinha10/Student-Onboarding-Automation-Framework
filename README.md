@@ -181,7 +181,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - 🐙 [GitHub](https://github.com/Ankitsinha10)
 - 🌐 [Portfolio](https://www.ankitkumarsinha.com)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Playwright](https://playwright.dev/) for the excellent testing framework
 - TypeScript community for type definitions and tooling
